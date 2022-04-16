@@ -1,0 +1,2 @@
+# omikuji
+javascriptの復習で簡単なおみくじアプリを作りました
