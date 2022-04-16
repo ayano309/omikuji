@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>omikuji</title>
+</head>
+<body>
+  
+  <button id="btn">おみくじ</button>
+  <div id="result">
+    <img src="" id="bigimg">
+  </div>
+  <script>
+
+    const btn = document.getElementById("btn");
+    btn.onclick = function(){
+      let img = [
+      "omikuji1.PNG",
+      "omikuji1.PNG",
+      "omikuji2.PNG",
+      "omikuji3.PNG",
+      "omikuji4.PNG"
+      ];
+
+      let number = Math.floor(Math.random() * img.length);
+      let result = document.getElementById('bigimg');
+      result.src = "img/" + img[number];
+    }
+
+    // const btn = document.querySelector("button");
+    // btn.onclick = function(){
+    //   let omikuji =["大吉","吉","中吉","小吉","末吉","凶","大凶"];
+    //   let value = omikuji[Math.floor(Math.random() * omikuji.length)];
+    //   let id1 = document.getElementById("result");
+    //   id1.innerHTML = value;
+    // }
+  </script>
+</body>
+</html>
